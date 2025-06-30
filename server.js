@@ -10,7 +10,7 @@ const sendFile = (res, filePath, contentType) => {
   fs.readFile(filePath, (err, data) => {
     if (err) {
       res.writeHead(500, { "Content-Type": "text/html; charset=utf-8" });
-      res.end("<h1>خطا در خواندن فایل</h1>");
+      res.end("<h1>Error reading the file</h1>");
     } else {
       res.writeHead(200, { "Content-Type": contentType });
       res.end(data);
@@ -41,7 +41,7 @@ const server = http.createServer((req, res) => {
     sendFile(res, filePath, contentTypes[ext] || "application/octet-stream");
   }else {
     res.writeHead(404, { "Content-Type": "text/html; charset=utf-8" });
-    res.end("<h1>صفحه مورد نظر پیدا نشد</h1>");
+    res.end("<h1>Page not found</h1>");
   }
 });
 
