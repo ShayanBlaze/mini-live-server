@@ -1,0 +1,27 @@
+{
+  "name": "mini-live-server",
+  "version": "1.0.0",
+  "description": "A lightweight development server with live reload built from scratch using Node.js and WebSocket.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Shayan Sharifi",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.15.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "keywords": [
+    "nodejs",
+    "live-server",
+    "websocket",
+    "fs.watch",
+    "custom-server",
+    "dev-server",
+    "reload"
+  ]
+}
