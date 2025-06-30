@@ -25,7 +25,6 @@ const server = http.createServer((req, res) => {
     "/": "index.html",
     "/styles.css": "styles.css",
     "/logo.svg": "logo.svg",
-    "/browser-app.js": "browser-app.js",
     "/reload-client.js": "reload-client.js",
   };
 
